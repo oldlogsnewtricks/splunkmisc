@@ -18,7 +18,7 @@ firewall-cmd --permanent --add-port=514/tcp
 # HTTPS based logging
 firewall-cmd --permanent --add-port=8088/udp
 
-# API/Deployment server 
+# API/Deployment server/License
 firewall-cmd --permanent --add-port=8089/udp
 
 # Reload
