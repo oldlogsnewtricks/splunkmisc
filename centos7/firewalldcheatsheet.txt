@@ -23,3 +23,7 @@ firewall-cmd --permanent --add-port=8089/udp
 
 # Reload
 firewall-cmd --reload
+
+# Port redirection 8443 >> 443
+firewall-cmd --permanent --add-forward-port=port=443:proto=tcp:toport=8443
+firewall-cmd --permanent --add-masquerade
