@@ -11,14 +11,14 @@ firewall-cmd --permanent --add-port=8443/tcp
 # Splunk data protocol
 firewall-cmd --permanent --add-port=9997/tcp
 
-# UDP
+# UDP and TCP syslog
 firewall-cmd --permanent --add-port=514/udp
 firewall-cmd --permanent --add-port=514/tcp
 
-# HTTP based logging
+# HTTPS based logging
 firewall-cmd --permanent --add-port=8088/udp
 
-# API, deployment server 
+# API/Deployment server 
 firewall-cmd --permanent --add-port=8089/udp
 
 # Reload
