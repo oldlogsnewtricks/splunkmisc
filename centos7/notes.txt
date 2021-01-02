@@ -1,0 +1,12 @@
+### Notes
+
+# Set your DNS server, I have a home router, put what ever DNS you're using. 
+vi /etc/resolv.conf
+nameserver 192.168.1.1
+
+# Parameters to add to your on your network interface
+BOOTPROTO=none
+ONBOOT=yes
+PREFIX=24
+IPADDR=192.168.1.100
+GATEWAY=192.168.1.1
